@@ -76,25 +76,33 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         {/* Illustration */}
-        <div className="mb-12">
+        {/* <div className="mb-12">
           <img
             src="https://media-hosting.imagekit.io//bbaba807bd544022/Grey%20Minimalist%20Under%20Construction%20Announcement%20Instagram%20Post.svg?Expires=1833629207&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=vty8PBtV0BUioZkd2ZJVa-UlRiq1CMaSGyHHTB6TDbjYbdXx~C0ET67-xaQOMa4vW9GhI81paXk36ucPNQMFHpxwF7oI5gC8F3QaDD9Ww3HiVIPcux1dxQ-~yAEQTP7gwm2o8S3kLWphF2C1UaQYvNz81NigxsIB-udohmHpvpjSP78bWZyhi~SzkauPUw6EB9Gp7HMxsKajUy0yD596ktE1qI66WTIRcWcxNLScO0EQzHlx2DR1GJkT0mNG2o31Nw7UkqF~8UDhNsrSPF0b7bYec1Ys7fRElFy5zvGBuDiyVp7X8dkcfrZKtkEVEFBfkPzCeGUmYkIyGRgzHQX2GA__"
             alt="Maintenance Illustration"
             className="w-full max-w-lg mx-auto rounded-lg shadow-xl"
           />
-        </div>
+        </div> */}
 
         {/* Content */}
         <div className="space-y-8">
-          <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
-            We're Currently Under Maintenance
-          </h1>
-
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We're working hard to improve our website and we'll be back on March
-            8, 2025 at 18:00 WIB. Thank you for your patience!
+          <div className="space-y-0">
+            {' '}
+            {/* Added new div with no spacing */}
+            <h1 className="text-[10rem] font-bold text-primary leading-none">
+              503
+            </h1>{' '}
+            {/* Added leading-none */}
+            <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl">
+              Service Unavailable
+            </h2>
+          </div>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto mt-8">
+            {' '}
+            {/* Added mt-8 for spacing after the headers */}
+            Our system is currently undergoing scheduled maintenance. We'll be
+            back on March 8, 2025 at 18:00 WIB. Thank you for your patience!
           </p>
-
           {/* Timer */}
           <div className="flex flex-col items-center space-y-4">
             <div className="flex items-center justify-center space-x-2 text-primary">
@@ -122,7 +130,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           {/* Subscribe Form */}
           <div className="max-w-md mx-auto">
             {!isSubscribed ? (
